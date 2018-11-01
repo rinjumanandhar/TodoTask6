@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>To Do List</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="todolist not-done">
+                 <h1>My To Do List</h1>
+                    <input type="text" id="myInput" placeholder="Add ToDo">
+                    <button id="checkAll" onclick="newElement()" class="btn btn-success">Add New ToDo</button>  
+                        <hr>
+                        <ul id="myUL" class="list-unstyled">
+                        <li class="checked">
+                            <input type="checkbox" checked />
+                            <label>a To-Do List</label> 
+                        </li>
+                        <li>
+                            <input type="checkbox" checked />
+                            <label> learn javascript</label>
+                        </li>
+                        <li> <input type="checkbox" />
+                            <label> learn DOM</label></li>
+                        <li> <input type="checkbox" id="check" />
+                            <label>add something</label></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="ToDo.js"></script>
+</body>
+</html>
